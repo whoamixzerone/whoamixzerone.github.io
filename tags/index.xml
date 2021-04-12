@@ -3,5 +3,19 @@
         <title>Tags - Tag - 👨‍💻Quantum &amp; Time</title>
         <link>https://whoamixzerone.github.io/tags/</link>
         <description>Tags - Tag - 👨‍💻Quantum &amp; Time</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://whoamixzerone.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>AutoConfiguration</title>
+    <link>https://whoamixzerone.github.io/tags/autoconfiguration/</link>
+    <pubDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://whoamixzerone.github.io/tags/autoconfiguration/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>Spring Boot</title>
+    <link>https://whoamixzerone.github.io/tags/spring-boot/</link>
+    <pubDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://whoamixzerone.github.io/tags/spring-boot/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

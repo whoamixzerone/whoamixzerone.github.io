@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>👨‍💻Quantum &amp; Time</title>
-        <link>https://whoamixzerone.github.io/</link>
-        <description>👨‍💻Quantum &amp; Time</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</lastBuildDate>
-            <atom:link href="https://whoamixzerone.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>AutoConfiguration - Tag - 👨‍💻Quantum &amp; Time</title>
+        <link>https://whoamixzerone.github.io/tags/autoconfiguration/</link>
+        <description>AutoConfiguration - Tag - 👨‍💻Quantum &amp; Time</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/tags/autoconfiguration/" rel="self" type="application/rss+xml" /><item>
     <title>Spring Boot 자동 환경 설정</title>
     <link>https://whoamixzerone.github.io/2021/04/12/spring-boot-autoconfigure/</link>
     <pubDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</pubDate>

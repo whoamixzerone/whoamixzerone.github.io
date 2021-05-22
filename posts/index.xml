@@ -3,17 +3,7 @@
         <title>All Posts - 👨‍💻Quantum &amp; Time</title>
         <link>https://whoamixzerone.github.io/posts/</link>
         <description>All Posts | 👨‍💻Quantum &amp; Time</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 23 May 2021 02:53:58 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>Java Pattern Singleton</title>
-    <link>https://whoamixzerone.github.io/2021/05/23/java-pattern-singleton/</link>
-    <pubDate>Sun, 23 May 2021 02:53:58 &#43;0900</pubDate>
-    <author>Author</author>
-    <guid>https://whoamixzerone.github.io/2021/05/23/java-pattern-singleton/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/java-pattern.png" referrerpolicy="no-referrer">
-            </div>싱글톤 패턴(Singleton Pattern)  싱글톤 패턴이란?
-  프로그램에서 인스턴스가 단 한 개만 생성되어야 하는 경우 사용하는 디자인 패턴 static 변수, 메서드를 활용하여 구현할 수 있음  ]]></description>
-</item><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Spring Boot 자동 환경 설정</title>
     <link>https://whoamixzerone.github.io/2021/04/12/spring-boot-autoconfigure/</link>
     <pubDate>Mon, 12 Apr 2021 11:26:38 &#43;0900</pubDate>

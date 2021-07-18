@@ -1,9 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Java - Tag - 👨‍💻Quantum &amp; Time</title>
-        <link>https://whoamixzerone.github.io/tags/java/</link>
-        <description>Java - Tag - 👨‍💻Quantum &amp; Time</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 18 Jul 2021 20:29:56 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/tags/java/" rel="self" type="application/rss+xml" /><item>
+        <title>Junit - Tag - 👨‍💻Quantum &amp; Time</title>
+        <link>https://whoamixzerone.github.io/tags/junit/</link>
+        <description>Junit - Tag - 👨‍💻Quantum &amp; Time</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 18 Jul 2021 20:29:56 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/tags/junit/" rel="self" type="application/rss+xml" /><item>
     <title>JUnit @Before &amp; @After</title>
     <link>https://whoamixzerone.github.io/2021/07/18/java-junit-before/</link>
     <pubDate>Sun, 18 Jul 2021 20:29:56 &#43;0900</pubDate>

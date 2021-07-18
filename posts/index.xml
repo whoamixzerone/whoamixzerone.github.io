@@ -19,7 +19,7 @@ JUnit을 사용할 때 인스턴스 생성을 위해 @Before 애노테이션을 
 JUnit에는 @RunWith, @Rule 같은 애노테이션을 사용해 기능을 확장할 수 있는데, @Before 안이어 야만 @RunWith, @Rule에서 초기화된 객체에 접근할 수 있다는 제약사항이 있기 때문이다.
 import static org.junit.Assert.assertEquals; import org.junit.Test; public class CalculatorTest { private Calculator cal; @Before public void setup() { cal = new Calculator(); System.out.println(&#34;before&#34;); } @After public void cleanup() { System.out.println(&#34;cleanup&#34;); } @Test public void add() { assertEquals(6, cal.add(3, 3)); System.out.println(&#34;add&#34;); } @Test public void sub() { assertEquals(0, cal.sub(3, 3)); System.out.println(&#34;sub&#34;); } @Test public void mul() { asssertEquals(9, cal.mul(3, 3)); System.out.println(&#34;mul&#34;); } @Test public void div() { assertEquals(2, cal.div(6, 3)); System.out.println(&#34;div&#34;); } } 이전 코드에서 @Before, @After 애노테이션을 사용했다.
 테스트를 실행해보면 실행 순서는 다음과 같이 나온다.
-매번 초기화, 후처리 작업을 통해 각 테스트 간에 영향을 미치지 않으면서 독립적인 실행이 가능하다.]]></description>
+ @Before -&gt; method -&gt; @After 순서로 나오는 것을 확인할 수 있다.  매번 초기화, 후처리 작업을 통해 각 테스트 간에 영향을 미치지 않으면서 독립적인 실행이 가능하다.]]></description>
 </item><item>
     <title>Spring Boot 자동 환경 설정</title>
     <link>https://whoamixzerone.github.io/2021/04/12/spring-boot-autoconfigure/</link>

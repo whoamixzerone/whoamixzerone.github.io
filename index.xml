@@ -3,9 +3,23 @@
         <title>👨‍💻Quantum &amp; Time</title>
         <link>https://whoamixzerone.github.io/</link>
         <description>👨‍💻Quantum &amp; Time</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 18 Jul 2021 20:29:56 &#43;0900</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Dec 2021 14:57:22 &#43;0900</lastBuildDate>
             <atom:link href="https://whoamixzerone.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>JWT Token</title>
+    <link>https://whoamixzerone.github.io/2021/12/15/jwt-token/</link>
+    <pubDate>Wed, 15 Dec 2021 14:57:22 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://whoamixzerone.github.io/2021/12/15/jwt-token/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/jwt-logo.png" referrerpolicy="no-referrer">
+            </div>JSON 웹 토큰 JSON 웹 토큰(JSON Web Token, JWT)은 클레임(사용자 정보)을 안전하게 표현하기 위한 인터넷 표준(RFC 7519)이다.
+JWT 구조  헤더{&quot;alg&quot; : &quot;HS256&quot;,&quot;typ&quot; : &quot;JWT&quot;}서명 생성을 위해 어떤 알고리즘을 사용할지 식별한다.토큰의 타입을 지정한다.
+페이로드{&quot;loggedInAs&quot; : &quot;admin&quot;,&quot;iat&quot; : 1422779638}iss (Issuer)- 발급자sub (Subject)- 주제aud (Audience)- 대상exp (Expiration Time)- 만료 시간nbf (Not Before)- 활성 날짜iat (Issued Time)- 발급 시간jti (JWT ID)- 고유 식별자다음 예는 표준 Issued Time 클레임(iat)과 사용자 지정 클레임(loggedInAs)을 보여준다.서명HMAC-SHA256(base64urlEncoding(header) + &#39;.&#39; +base64urlEncoding(payload),secret)서명은 Base64url 인코딩을 이용하여 헤더와 페이로드를 인코딩하고 이 둘을 점(.) 구분자로 함께 연결시킴으로써 계산된다. 해당 문자열은 그 뒤 헤더에 규정된 암호화 알고리즘(이번 경우에는 HMAC-SHA256)에 유입된다. Base64url 인코딩은 base64와 비슷하지만 각기 다른 영숫자를 사용하며 패딩(padding)은 제외한다.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dnZWRJbkFzIjoiYWRtaW4iLCJpYXQiOjE0MjI3Nzk2Mzh9.qGQsbhR55bCg9Itm9hk_LHayO87LXusqa9_21u1sAwQBase64url 인코딩을 적용한 값 헤더.페이로드.서명 에 해당된다.
+JWT Debugger에 Encoded 값을 위의 값으로 변경하면, 정보를 확인할 수 있다(JWT 토큰을 생성, 검증할 수 있는 디버거 서비스이다).
+참조  [1] jwt.io
+[2] JSON 웹 토큰 위키백과]]></description>
+</item><item>
     <title>JUnit @Before &amp; @After</title>
     <link>https://whoamixzerone.github.io/2021/07/18/java-junit-before/</link>
     <pubDate>Sun, 18 Jul 2021 20:29:56 &#43;0900</pubDate>
@@ -15,9 +29,9 @@
                 <img src="/images/annotation-before.png" referrerpolicy="no-referrer">
             </div>@Before 애노테이션을 지금까지 테스트 실행 전 실행이 된다는 것 정도만 알고 있었는데, 박재성 님의 책을 통해 좋은 내용을 알게 되었다.
 JUnit을 사용할 때 인스턴스 생성을 위해 @Before 애노테이션을 활용한다.
-@Before 애노테이션을 사용하지 않고 필드(field)로 구현하는 방법도 단위 테스트는 성공한다. 각 단위 테스트를 실행할 때마다 인스턴스를 생성하는 것은 똑같기 때문이다. import static org.junit.Assert.assertEquals; import org.junit.Test; public class CalculatorTest { private Calculator cal = new Calculator; @Test public void add() { assertEquals(6, cal.add(3, 3)); } @Test public void sub() { assertEquals(0, cal.sub(3, 3)); } @Test public void mul() { asssertEquals(9, cal.mul(3, 3)); } @Test public void div() { assertEquals(2, cal.div(6, 3)); } } 위와 같이 작성해도 테스트는 성공한다.
+@Before 애노테이션을 사용하지 않고 필드(field)로 구현하는 방법도 단위 테스트는 성공한다.각 단위 테스트를 실행할 때마다 인스턴스를 생성하는 것은 똑같기 때문이다.import static org.junit.Assert.assertEquals; import org.junit.Test; public class CalculatorTest { private Calculator cal = new Calculator; @Test public void add() { assertEquals(6, cal.add(3, 3)); } @Test public void sub() { assertEquals(0, cal.sub(3, 3)); } @Test public void mul() { asssertEquals(9, cal.mul(3, 3)); } @Test public void div() { assertEquals(2, cal.div(6, 3)); } } 위와 같이 작성해도 테스트는 성공한다.
 하지만, JUnit은 초기화 작업을 위와 같이 구현하는 것을 추천하지 않는다.
-인스턴스를 매 테스트마다 생성하는 이유는 테스트 메서드를 실행할 때 인스턴스의 상태 값이 변경되어 다음 테스트 메서드를 실행할 때 영향을 미칠 수 있기 때문이다. 이와 같이 테스트 실행 순서나 인스턴스 상태 값에 따라 테스트가 성공하거나 실패할 수 있다. @Before 그러면 왜 @Before 애노테이션을 활용하도록 추천할까?
+인스턴스를 매 테스트마다 생성하는 이유는 테스트 메서드를 실행할 때 인스턴스의 상태 값이 변경되어 다음 테스트 메서드를 실행할 때 영향을 미칠 수 있기 때문이다. 이와 같이 테스트 실행 순서나 인스턴스 상태 값에 따라 테스트가 성공하거나 실패할 수 있다.@Before 그러면 왜 @Before 애노테이션을 활용하도록 추천할까?
 JUnit에는 @RunWith, @Rule 같은 애노테이션을 사용해 기능을 확장할 수 있는데, @Before 안이어 야만 @RunWith, @Rule에서 초기화된 객체에 접근할 수 있다는 제약사항이 있기 때문이다.
 import static org.junit.Assert.assertEquals; import org.junit.Test; public class CalculatorTest { private Calculator cal; @Before public void setup() { cal = new Calculator(); System.out.println(&#34;before&#34;); } @After public void cleanup() { System.out.println(&#34;cleanup&#34;); } @Test public void add() { assertEquals(6, cal.add(3, 3)); System.out.println(&#34;add&#34;); } @Test public void sub() { assertEquals(0, cal.sub(3, 3)); System.out.println(&#34;sub&#34;); } @Test public void mul() { asssertEquals(9, cal.mul(3, 3)); System.out.println(&#34;mul&#34;); } @Test public void div() { assertEquals(2, cal.div(6, 3)); System.out.println(&#34;div&#34;); } } 이전 코드에서 @Before, @After 애노테이션을 사용했다.
 테스트를 실행해보면 실행 순서는 다음과 같이 나온다.

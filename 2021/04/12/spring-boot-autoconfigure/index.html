@@ -23,8 +23,8 @@ Bean 등록 및 자동 설정 파일 파일 위치 spring-boot-autoconfigure-2.4
  프로퍼티 값은 위의 spring boot docs에서 확인할 수 있다." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://whoamixzerone.github.io/2021/04/12/spring-boot-autoconfigure/" /><meta property="og:image" content="https://whoamixzerone.github.io/images/spring-boot.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-04-12T11:26:38&#43;09:00" />
-<meta property="article:modified_time" content="2021-04-12T11:26:38&#43;09:00" />
+<meta property="article:published_time" content="2021-04-12T11:26:38+09:00" />
+<meta property="article:modified_time" content="2021-04-12T11:26:38+09:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://whoamixzerone.github.io/images/spring-boot.png"/>
@@ -143,7 +143,7 @@ Bean 등록 및 자동 설정 파일 파일 위치 spring-boot-autoconfigure-2.4
 <p>Spring Boot Version은 2.4.4 버전이다.</p>
 <h2 id="springbootapplication">@SpringBootApplication</h2>
 <p>spring-boot-autoconfigure-2.4.4.jar/org/springframework/boot/autoconfigure/SpringBootApplication.java</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Target</span><span class="o">(</span><span class="n">ElementType</span><span class="o">.</span><span class="na">TYPE</span><span class="o">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Target</span><span class="o">(</span><span class="n">ElementType</span><span class="o">.</span><span class="na">TYPE</span><span class="o">)</span>
 <span class="nd">@Retention</span><span class="o">(</span><span class="n">RetentionPolicy</span><span class="o">.</span><span class="na">RUNTIME</span><span class="o">)</span>
 <span class="nd">@Documented</span>
 <span class="nd">@Inherited</span>
@@ -158,7 +158,7 @@ Bean 등록 및 자동 설정 파일 파일 위치 spring-boot-autoconfigure-2.4
 </ul>
 <h2 id="enableautoconfiguration">@EnableAutoConfiguration</h2>
 <p>spring-boot-autoconfigure-2.4.4.jar/org/springframework/boot/autoconfigre/EnableAutoConfiguration.java</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Target</span><span class="o">(</span><span class="n">ElementType</span><span class="o">.</span><span class="na">TYPE</span><span class="o">)</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Target</span><span class="o">(</span><span class="n">ElementType</span><span class="o">.</span><span class="na">TYPE</span><span class="o">)</span>
 <span class="nd">@Retention</span><span class="o">(</span><span class="n">RetentionPolicy</span><span class="o">.</span><span class="na">RUNTIME</span><span class="o">)</span>
 <span class="nd">@Documented</span>
 <span class="nd">@Inherited</span>
@@ -169,7 +169,7 @@ Bean 등록 및 자동 설정 파일 파일 위치 spring-boot-autoconfigure-2.4
 <h2 id="autoconfigurationimportselector-class">AutoConfigurationImportSelector class</h2>
 <p>해당 클래스에서 여러 필드와 메서드로 인해 간소화했다.
 spring-boot-autoconfigure-2.4.4.jar/org/springframework/boot/autoconfigure/AutoConfigurationImportSelector.java</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">AutoConfigurationImportSelector</span> <span class="kd">implements</span> <span class="n">DeferredImportSelector</span><span class="o">,</span> <span class="n">BeanClassLoaderAware</span><span class="o">,</span> <span class="n">ResourceLoaderAware</span><span class="o">,</span> <span class="n">BeanFactoryAware</span><span class="o">,</span> <span class="n">EnvironmentAware</span><span class="o">,</span> <span class="n">Ordered</span> <span class="o">{}</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">AutoConfigurationImportSelector</span> <span class="kd">implements</span> <span class="n">DeferredImportSelector</span><span class="o">,</span> <span class="n">BeanClassLoaderAware</span><span class="o">,</span> <span class="n">ResourceLoaderAware</span><span class="o">,</span> <span class="n">BeanFactoryAware</span><span class="o">,</span> <span class="n">EnvironmentAware</span><span class="o">,</span> <span class="n">Ordered</span> <span class="o">{}</span>
 </code></pre></div><h1 id="heading"></h1>
 <h1 id="heading-1"></h1>
 <p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/springframework/context/annotation/DeferredImportSelector.html" target="_blank" rel="noopener noreffer">DeferredImportSelector docs</a></p>
@@ -180,7 +180,7 @@ selectImports 메서드에서 자동 설정할 bean을 결정한다.
 DeferredImportSelector 인터페이스 내용은 위의 springframework docs으로 확인할 수 있다.</p>
 <h1 id="heading-4"></h1>
 <h2 id="selectimports-method">selectImports method</h2>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Override</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Override</span>
 <span class="kd">public</span> <span class="n">String</span><span class="o">[]</span> <span class="nf">selectImports</span><span class="o">(</span><span class="n">AnnotationMetadata</span> <span class="n">annotationMetadata</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(!</span><span class="n">isEnabled</span><span class="o">(</span><span class="n">annotationMetadata</span><span class="o">))</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">NO_IMPORTS</span><span class="o">;</span>
@@ -194,7 +194,7 @@ DeferredImportSelector 인터페이스 내용은 위의 springframework docs으�
 getAutoConfigurationEntry 메서드에서 bean을 확인한다.</p>
 <h1 id="heading-7"></h1>
 <h1 id="heading-8"></h1>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">protected</span> <span class="n">AutoConfigurationEntry</span> <span class="nf">getAutoConfigurationEntry</span><span class="o">(</span><span class="n">AnnotationMetadata</span> <span class="n">annotationMetadata</span><span class="o">)</span> <span class="o">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">protected</span> <span class="n">AutoConfigurationEntry</span> <span class="nf">getAutoConfigurationEntry</span><span class="o">(</span><span class="n">AnnotationMetadata</span> <span class="n">annotationMetadata</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(!</span><span class="n">isEnabled</span><span class="o">(</span><span class="n">annotationMetadata</span><span class="o">))</span> <span class="o">{</span>
         <span class="k">return</span> <span class="n">EMPTY_ENTRY</span><span class="o">;</span>
     <span class="o">}</span>
@@ -209,7 +209,7 @@ getAutoConfigurationEntry 메서드에서 bean을 확인한다.</p>
     <span class="k">return</span> <span class="k">new</span> <span class="n">AutoConfigurationEntry</span><span class="o">(</span><span class="n">configurations</span><span class="o">,</span> <span class="n">exclusions</span><span class="o">);</span>
 <span class="o">}</span>
 </code></pre></div><h1 id="heading-9"></h1>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">protected</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="nf">getCandidateConfigurations</span><span class="o">(</span><span class="n">AnnotationMetadata</span> <span class="n">metadata</span><span class="o">,</span> <span class="n">AnnotationAttributes</span> <span class="n">attributes</span><span class="o">)</span> <span class="o">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">protected</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="nf">getCandidateConfigurations</span><span class="o">(</span><span class="n">AnnotationMetadata</span> <span class="n">metadata</span><span class="o">,</span> <span class="n">AnnotationAttributes</span> <span class="n">attributes</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">configurations</span> <span class="o">=</span> <span class="n">SpringFactoriesLoader</span><span class="o">.</span><span class="na">loadFactoryNames</span><span class="o">(</span><span class="n">getSpringFactoriesLoaderFactoryClass</span><span class="o">(),</span> <span class="n">getBeanClassLoader</span><span class="o">());</span>
     <span class="n">Assert</span><span class="o">.</span><span class="na">notEmpty</span><span class="o">(</span><span class="n">configurations</span><span class="o">,</span> <span class="s">&#34;No auto configuration classes found in META-INF/spring.factories. If you &#34;</span>
     <span class="o">+</span> <span class="s">&#34;are using a custom packaging, make sure that file is correct.&#34;</span><span class="o">);</span>
@@ -260,7 +260,7 @@ getAutoConfigurationEntry 메서드에서 bean을 확인한다.</p>
                 Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.90.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://whoamixzerone.github.io/resume" target="_blank">ZerOne</a></span></div>
         </div>
     </footer></div>

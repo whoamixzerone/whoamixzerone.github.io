@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>JWT - Tag - 👨‍💻Quantum &amp; Time</title>
+        <link>https://whoamixzerone.github.io/tags/jwt/</link>
+        <description>JWT - Tag - 👨‍💻Quantum &amp; Time</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Dec 2021 14:57:22 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/tags/jwt/" rel="self" type="application/rss+xml" /><item>
+    <title>JWT Token</title>
+    <link>https://whoamixzerone.github.io/2021/12/15/jwt-token/</link>
+    <pubDate>Wed, 15 Dec 2021 14:57:22 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://whoamixzerone.github.io/2021/12/15/jwt-token/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/jwt-logo.png" referrerpolicy="no-referrer">
+            </div>JSON 웹 토큰 JSON 웹 토큰(JSON Web Token, JWT)은 클레임(사용자 정보)을 안전하게 표현하기 위한 인터넷 표준(RFC 7519)이다.
+JWT 구조  헤더{&quot;alg&quot; : &quot;HS256&quot;,&quot;typ&quot; : &quot;JWT&quot;}서명 생성을 위해 어떤 알고리즘을 사용할지 식별한다.토큰의 타입을 지정한다.
+페이로드{&quot;loggedInAs&quot; : &quot;admin&quot;,&quot;iat&quot; : 1422779638}iss (Issuer)- 발급자sub (Subject)- 주제aud (Audience)- 대상exp (Expiration Time)- 만료 시간nbf (Not Before)- 활성 날짜iat (Issued Time)- 발급 시간jti (JWT ID)- 고유 식별자다음 예는 표준 Issued Time 클레임(iat)과 사용자 지정 클레임(loggedInAs)을 보여준다.서명HMAC-SHA256(base64urlEncoding(header) + &#39;.&#39; +base64urlEncoding(payload),secret)서명은 Base64url 인코딩을 이용하여 헤더와 페이로드를 인코딩하고 이 둘을 점(.) 구분자로 함께 연결시킴으로써 계산된다. 해당 문자열은 그 뒤 헤더에 규정된 암호화 알고리즘(이번 경우에는 HMAC-SHA256)에 유입된다. Base64url 인코딩은 base64와 비슷하지만 각기 다른 영숫자를 사용하며 패딩(padding)은 제외한다.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJsb2dnZWRJbkFzIjoiYWRtaW4iLCJpYXQiOjE0MjI3Nzk2Mzh9.qGQsbhR55bCg9Itm9hk_LHayO87LXusqa9_21u1sAwQBase64url 인코딩을 적용한 값 헤더.페이로드.서명 에 해당된다.
+JWT Debugger에 Encoded 값을 위의 값으로 변경하면, 정보를 확인할 수 있다(JWT 토큰을 생성, 검증할 수 있는 디버거 서비스이다).
+참조  [1] jwt.io
+[2] JSON 웹 토큰 위키백과]]></description>
+</item></channel>
+</rss>

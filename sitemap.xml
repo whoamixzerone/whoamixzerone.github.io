@@ -2,17 +2,22 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>https://whoamixzerone.github.io/categories/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/jwt/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/2021/12/15/jwt-token/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/posts/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/token/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/web/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/categories/web/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/after/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/annotation/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/before/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/categories/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/java/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/categories/java/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/junit/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/2021/07/18/java-junit-before/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/posts/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/tags/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/autoconfiguration/</loc><lastmod>2021-04-12T11:26:38&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/categories/spring/</loc><lastmod>2021-04-12T11:26:38&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/spring-boot/</loc><lastmod>2021-04-12T11:26:38&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>

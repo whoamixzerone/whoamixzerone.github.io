@@ -2,15 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://whoamixzerone.github.io/categories/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/tags/jpa/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/categories/jpa/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/2022/03/03/jpa-mappedsuperclass/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/tags/mappedsuperclass/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/posts/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/tags/spring/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/tags/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/</loc><lastmod>2022-03-03T21:36:20&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/categories/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/jpa/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/categories/jpa/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/2022/03/03/jpa-mappedsuperclass/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/posts/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/spring/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/tags/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://whoamixzerone.github.io/</loc><lastmod>2022-03-03T20:14:01&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/jwt/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/2021/12/15/jwt-token/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/token/</loc><lastmod>2021-12-15T14:57:22&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
@@ -23,8 +22,6 @@
             <loc>https://whoamixzerone.github.io/categories/java/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/junit/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/2021/07/18/java-junit-before/</loc><lastmod>2021-07-18T20:29:56&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/2021/05/23/java-pattern-singleton/</loc><lastmod>2021-05-23T02:53:58&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://whoamixzerone.github.io/tags/pattern/</loc><lastmod>2021-05-23T02:53:58&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/autoconfiguration/</loc><lastmod>2021-04-12T11:26:38&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/categories/spring/</loc><lastmod>2021-04-12T11:26:38&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://whoamixzerone.github.io/tags/spring-boot/</loc><lastmod>2021-04-12T11:26:38&#43;09:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>

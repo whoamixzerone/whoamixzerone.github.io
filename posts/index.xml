@@ -3,7 +3,21 @@
         <title>All Posts - 👨‍💻Quantum &amp; Time</title>
         <link>https://whoamixzerone.github.io/posts/</link>
         <description>All Posts | 👨‍💻Quantum &amp; Time</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 15 Dec 2021 14:57:22 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 03 Mar 2022 21:36:20 &#43;0900</lastBuildDate><atom:link href="https://whoamixzerone.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Jpa Mappedsuperclass</title>
+    <link>https://whoamixzerone.github.io/2022/03/03/jpa-mappedsuperclass/</link>
+    <pubDate>Thu, 03 Mar 2022 21:36:20 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://whoamixzerone.github.io/2022/03/03/jpa-mappedsuperclass/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/jpa-logo.png" referrerpolicy="no-referrer">
+            </div>@MappedSuperclass 엔티티를 구현하다 보면 보통 공통적으로 사용하는 속성들이 존재한다.
+가장 많이 나오는 게 등록일, 수정일, 등록자, 수정자 등이 이에 해당한다.
+이렇듯 공통 매핑 정보를 부모 클래스에서 상속받아 사용할 때 쓰인다. 부모 클래스는 테이블과 매핑하지 않고 자식 클래스에게 매핑 정보만 제공하는 것이다.(자식 클래스에서는 상속한 필드들도 칼럼으로 인식한다)
+@MappedSuperclass @Getter public abstract class BaseEntity { private LocalDateTime createdAt; private LocalDateTime updatedAt; } public class Member extends BaseEntity { ... } 
+@MappedSuperclass를 선언한 클래스는 엔티티가 아니다.
+그리고 직접 생성해서 사용할 일이 없으므로 추상 클래스로 만드는 것을 권장한다.]]></description>
+</item><item>
     <title>JWT Token</title>
     <link>https://whoamixzerone.github.io/2021/12/15/jwt-token/</link>
     <pubDate>Wed, 15 Dec 2021 14:57:22 &#43;0900</pubDate>
@@ -34,6 +48,16 @@ JUnit에는 @RunWith, @Rule 같은 애노테이션을 사용해 기능을 확장
 import static org.junit.Assert.assertEquals; import org.junit.Test; public class CalculatorTest { private Calculator cal; @Before public void setup() { cal = new Calculator(); System.out.println(&#34;before&#34;); } @After public void cleanup() { System.out.println(&#34;cleanup&#34;); } @Test public void add() { assertEquals(6, cal.add(3, 3)); System.out.println(&#34;add&#34;); } @Test public void sub() { assertEquals(0, cal.sub(3, 3)); System.out.println(&#34;sub&#34;); } @Test public void mul() { asssertEquals(9, cal.mul(3, 3)); System.out.println(&#34;mul&#34;); } @Test public void div() { assertEquals(2, cal.div(6, 3)); System.out.println(&#34;div&#34;); } } 이전 코드에서 @Before, @After 애노테이션을 사용했다.
 테스트를 실행해보면 실행 순서는 다음과 같이 나온다.
  @Before -&gt; method -&gt; @After 순서로 나오는 것을 확인할 수 있다.  매번 초기화, 후처리 작업을 통해 각 테스트 간에 영향을 미치지 않으면서 독립적인 실행이 가능하다.]]></description>
+</item><item>
+    <title>Java Pattern Singleton</title>
+    <link>https://whoamixzerone.github.io/2021/05/23/java-pattern-singleton/</link>
+    <pubDate>Sun, 23 May 2021 02:53:58 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://whoamixzerone.github.io/2021/05/23/java-pattern-singleton/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/java_pattern.png" referrerpolicy="no-referrer">
+            </div>싱글톤 패턴(Singleton Pattern)  싱글톤 패턴이란?
+ 프로그램에서 인스턴스가 단 한 개만 생성되어야 하는 경우 사용하는 디자인 패턴 static 변수, 메서드를 활용하여 구현할 수 있음   ]]></description>
 </item><item>
     <title>Spring Boot 자동 환경 설정</title>
     <link>https://whoamixzerone.github.io/2021/04/12/spring-boot-autoconfigure/</link>

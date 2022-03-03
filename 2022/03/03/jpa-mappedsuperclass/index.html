@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Jpa Mappedsuperclass - 👨‍💻Quantum &amp; Time</title><meta name="Description" content=""><meta property="og:title" content="Jpa Mappedsuperclass" />
+<meta property="og:description" content="@MappedSuperclass 엔티티를 구현하다 보면 보통 공통적으로 사용하는 속성들이 존재한다.
+가장 많이 나오는 게 등록일, 수정일, 등록자, 수정자 등이 이에 해당한다.
+이렇듯 공통 매핑 정보를 부모 클래스에서 상속받아 사용할 때 쓰인다. 부모 클래스는 테이블과 매핑하지 않고 자식 클래스에게 매핑 정보만 제공하는 것이다.(자식 클래스에서는 상속한 필드들도 칼럼으로 인식한다)
+@MappedSuperclass @Getter public abstract class BaseEntity { private LocalDateTime createdAt; private LocalDateTime updatedAt; } public class Member extends BaseEntity { ... } 
+@MappedSuperclass를 선언한 클래스는 엔티티가 아니다.
+그리고 직접 생성해서 사용할 일이 없으므로 추상 클래스로 만드는 것을 권장한다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://whoamixzerone.github.io/2022/03/03/jpa-mappedsuperclass/" /><meta property="og:image" content="https://whoamixzerone.github.io/images/jpa-logo.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-03T21:36:20+09:00" />
+<meta property="article:modified_time" content="2022-03-03T21:36:20+09:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://whoamixzerone.github.io/images/jpa-logo.png"/>
+
+<meta name="twitter:title" content="Jpa Mappedsuperclass"/>
+<meta name="twitter:description" content="@MappedSuperclass 엔티티를 구현하다 보면 보통 공통적으로 사용하는 속성들이 존재한다.
+가장 많이 나오는 게 등록일, 수정일, 등록자, 수정자 등이 이에 해당한다.
+이렇듯 공통 매핑 정보를 부모 클래스에서 상속받아 사용할 때 쓰인다. 부모 클래스는 테이블과 매핑하지 않고 자식 클래스에게 매핑 정보만 제공하는 것이다.(자식 클래스에서는 상속한 필드들도 칼럼으로 인식한다)
+@MappedSuperclass @Getter public abstract class BaseEntity { private LocalDateTime createdAt; private LocalDateTime updatedAt; } public class Member extends BaseEntity { ... } 
+@MappedSuperclass를 선언한 클래스는 엔티티가 아니다.
+그리고 직접 생성해서 사용할 일이 없으므로 추상 클래스로 만드는 것을 권장한다."/>
+<meta name="application-name" content="👨‍💻Quantum &amp; Time">
+<meta name="apple-mobile-web-app-title" content="👨‍💻Quantum &amp; Time"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://whoamixzerone.github.io/2022/03/03/jpa-mappedsuperclass/" /><link rel="prev" href="https://whoamixzerone.github.io/2021/12/15/jwt-token/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Jpa Mappedsuperclass",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/whoamixzerone.github.io\/2022\/03\/03\/jpa-mappedsuperclass\/"
+        },"genre": "posts","keywords": "JPA, Spring, MappedSuperclass","wordcount":  84 ,
+        "url": "https:\/\/whoamixzerone.github.io\/2022\/03\/03\/jpa-mappedsuperclass\/","datePublished": "2022-03-03T21:36:20+09:00","dateModified": "2022-03-03T21:36:20+09:00","publisher": {
+            "@type": "Organization",
+            "name": "ZerOne"},"author": {
+                "@type": "Person",
+                "name": "ZerOne"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="auto" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('dark' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'dark' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="👨‍💻Quantum &amp; Time">👨‍💻Quantum &amp; Time</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="👨‍💻Quantum &amp; Time">👨‍💻Quantum &amp; Time</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Jpa Mappedsuperclass</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://whoamixzerone.github.io/resume" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>ZerOne</a></span>&nbsp;<span class="post-category">included in <a href="/categories/jpa/"><i class="far fa-folder fa-fw"></i>JPA</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-03">2022-03-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;84 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/jpa-logo.png"
+        data-srcset="/images/jpa-logo.png, /images/jpa-logo.png 1.5x, /images/jpa-logo.png 2x"
+        data-sizes="auto"
+        alt="/images/jpa-logo.png"
+        title="/images/jpa-logo.png" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="mappedsuperclass">@MappedSuperclass</h1>
+<p>엔티티를 구현하다 보면 보통 공통적으로 사용하는 속성들이 존재한다.<br>
+가장 많이 나오는 게 등록일, 수정일, 등록자, 수정자 등이 이에 해당한다.<br>
+이렇듯 공통 매핑 정보를 부모 클래스에서 상속받아 사용할 때 쓰인다.
+부모 클래스는 테이블과 매핑하지 않고 자식 클래스에게 매핑 정보만 제공하는 것이다.(자식 클래스에서는 상속한 필드들도 칼럼으로 인식한다)<br>
+<br></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@MappedSuperclass</span>
+<span class="nd">@Getter</span>
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">BaseEntity</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">LocalDateTime</span> <span class="n">createdAt</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">LocalDateTime</span> <span class="n">updatedAt</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Member</span> <span class="kd">extends</span> <span class="n">BaseEntity</span> <span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</code></pre></div><br>
+<p>@MappedSuperclass를 선언한 클래스는 엔티티가 아니다.<br>
+그리고 직접 생성해서 사용할 일이 없으므로 추상 클래스로 만드는 것을 권장한다.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2022-03-03</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/jpa/">JPA</a>,&nbsp;<a href="/tags/spring/">Spring</a>,&nbsp;<a href="/tags/mappedsuperclass/">MappedSuperclass</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2021/12/15/jwt-token/" class="prev" rel="prev" title="JWT Token"><i class="fas fa-angle-left fa-fw"></i>JWT Token</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.90.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://whoamixzerone.github.io/resume" target="_blank">ZerOne</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":500},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"Comment","lightTheme":"github-light","repo":null}}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
